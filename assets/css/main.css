@@ -648,86 +648,45 @@ ul li, ol li {
   padding: 0 10px;
   position: relative;
 }
-/* Skills Section */
-.skills {
-  padding: 60px 20px;
-  background: #f9f9f9;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.skills h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2rem;
-}
-
-/* Container */
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-}
-
-/* Individual Skill */
-.skill span {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 8px;
-}
-
-/* Section Styling */
 .skills-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 60px 20px;
-  background: #f8f9fa;
-  font-family: Arial, sans-serif;
+    padding: 80px 10%;
+    background: #0f172a;
+    color: white;
 }
 
-.skills-section h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2.2rem;
+.skill {
+    margin-bottom: 25px;
 }
 
-/* Skills Layout */
-.skills-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-}
-
-/* Skill Item */
 .skill-title {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-  font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
 
-/* Progress Bar */
 .progress-bar {
-  width: 100%;
-  height: 12px;
-  background: #ddd;
-  border-radius: 20px;
-  overflow: hidden;
+    background: #1e293b;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .progress {
-  height: 100%;
-  border-radius: 20px;
-  animation: fill 1.5s ease-in-out forwards;
+    height: 100%;
+    width: 0; /* start at 0 */
+    border-radius: 10px;
+    transition: width 1.8s ease-in-out;
 }
 
-/* Skill Colors & Widths */
-.sql { width: 90%; background: #00758f; }
-.python { width: 85%; background: #306998; }
-.excel { width: 88%; background: #217346; }
-.powerbi { width: 80%; background: #f2c811; }
-.tableau { width: 75%; background: #e97627; }
-.stats { width: 78%; background: #6a1b9a; }
+/* Colors */
+.sql { background: linear-gradient(90deg,#38bdf8,#0ea5e9); }
+.python { background: linear-gradient(90deg,#22c55e,#16a34a); }
+.excel { background: linear-gradient(90deg,#10b981,#047857); }
+.powerbi { background: linear-gradient(90deg,#facc15,#eab308); }
+.tableau { background: linear-gradient(90deg,#fb7185,#f43f5e); }
+.stats { background: linear-gradient(90deg,#a78bfa,#7c3aed); }
+
 
 /* Animation */
 @keyframes fill {
@@ -1774,3 +1733,4 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 #copyright p a:hover {
   color: #00b4d9;
 }
+
